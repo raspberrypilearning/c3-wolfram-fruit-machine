@@ -1,19 +1,12 @@
 ## Introduction
 
-Add project description here. What will learners be making?
+In this project, you are going to build an interactive Fruit Machine game. The game is simple: you press the button and three fruits are randomly selected from five possible options. If you get three of the same fruit, you win the game.
 
 ### What you will make
 
---- no-print ---
-Add instructions for using the embedded content here.
-
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
---- /no-print ---
 
 --- print-only ---
-![Complete project](images/showcase_static.png)
+![Complete project](images/Complete.png)
 --- /print-only ---
 
 --- collapse ---
@@ -22,17 +15,12 @@ title: What you will need
 ---
 ### Hardware
 
-+ Describe hardware here
++ Either a desktop computer, laptop, or a Raspberry Pi
 
 ### Software
 
-+ Scratch 2.0 (either [online](http://rpf.io/scratchon) or [offline](http://rpf.io/scratchoff))
-+ Python 3
-+ This project can be completed in a web browser using [trinket.io](https://trinket.io/)
-
-### Downloads
-
-+ [rpf.io/project-name-go](http://rpf.io/project-name-go){:target="_blank"}
++ Wolfram Language
++ This project can be completed in a web browser using [wolframcloud.com](http://lab.wolframcloud.com/app/). Log in, and click Create New Notebook.
 
 --- /collapse ---
 
@@ -41,8 +29,11 @@ title: What you will need
 title: What you will learn
 ---
 
-+ Two or three learning objectives
-+ ...should go here
++ Choosing items randomly from a list
++ Adding Buttons
++ Responding to user choices
+
+If you have never used the Wolfram Language before, follow [this guide](https://projects.raspberrypi.org/en/projects/getting-started-with-mathematica). You'll need to look at Starting Mathematica and Programming in Mathematica. If you are using the web browser version of Wolfram, you only need to look at Programming in Mathematica.
 
 --- /collapse ---
 

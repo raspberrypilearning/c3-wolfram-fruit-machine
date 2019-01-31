@@ -1,11 +1,17 @@
-title: c3-wolfram-fruit-machine
+title: Fruit Machine
 hero_image: images/banner.png
-description: c3-wolfram-fruit-machine description
+description:
 version: 4
 listed: false
 copyedit: false
-last_tested: "2019-01-31"
+last_tested: "2018-12-06"
 steps:
   - title: Introduction
-  - title: Step title
-  - title: What next?
+  - title: Importing Images
+  - title: Random Choices
+  - title: Building a Game
+  - title: Making the Game Playable
+  - title: Keeping Score
+  - title: Finishing Touches
+  - title: "Challenge: End the Game"
+    challenge: true

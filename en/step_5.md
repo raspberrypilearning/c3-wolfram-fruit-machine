@@ -6,7 +6,8 @@ We want a button which selects three random pieces of fruit, and runs our Which 
 
 
 --- task ---
-Try to put your Which statement and your roll variable into a button.
+
+Put your Which statement and your roll variable into a button.
 
 Use a `;` to separate commands inside the button.
 
@@ -35,4 +36,5 @@ Button["Roll Again",
 Dynamic[Grid[{roll}, Frame -> All, FrameStyle -> Thick]]
 Dynamic[result]
 ```
+Delete your code for the non-Dynamic button you made in the previous step.
 --- /task ---

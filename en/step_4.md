@@ -3,9 +3,9 @@
 There are three possible outcomes for the game:
 + 3 fruit the same: the player wins
 + 2 fruit the same: the player is close
-+ all fruits different: the player loses
++ All fruits different: the player loses
 
-We can find out if there are any duplicates by finding the `Count` of each fruit. We can then use `Max` to find out the largest number of duplicates.
+We can find out how many of the randomly selected fruits are the same by finding the `Count` of each fruit. We can then use `Max` to find out the largest number of duplicates.
 
 ![Max Counts 2](images/MaxCounts2.png)
 
@@ -30,14 +30,12 @@ A `Which` statement takes an input (the list of randomly chosen fruits), and che
 
 Combine the random fruit picker and the game rules into a single function using a `Which` statement.
 
-![Roll](images/Roll.png)
-
 ```
 roll = RandomChoice[fruits, 3]
 Which[
  Max[Counts[roll]] == 3, Print["Winner!"],
- Max[Counts[roll]] == 2, Print["So Close!"] ,
+ Max[Counts[roll]] == 2, Print["So Close!"],
  Max[Counts[roll]] == 1, Print["Loser!"]]
- 
 ```
+Delete any previous code featuring `RandomChoice[fruits, 3]`
 --- /task ---

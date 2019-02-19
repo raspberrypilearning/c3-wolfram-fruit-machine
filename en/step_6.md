@@ -11,11 +11,13 @@ And then we can add using `+=`, and take away using `-=`
 ![Number Adding](images/NumberAdd.png)
 
 --- task ---
+
 Set up a score variable.
 
 ```
-score = 100
+score = 100;
 ```
+Put your `score` variable underneath your variables for `roll` and `result`. 
 
 --- /task ---
 
@@ -36,8 +38,7 @@ result =
   Which[
    Max[Counts[roll]] == 3, score += 10; Text["Winner!"],
    Max[Counts[roll]] == 2, Text["So Close!"],
-   Max[Counts[roll]] == 1, score -= 10; Text["Loser!"]];
-
+   Max[Counts[roll]] == 1, score -= 10; Text["Loser!"]]
 ```
 Replace your previous code for `result` with your new `Which` statement.
 
@@ -50,7 +51,13 @@ Create another button which sets the score back to 100.
 
 ```
 Button["Start Again", score = 100]
+```
+Put your new button on a new line after the `"Roll Again"` button.
 
- ```
  --- /task ---
 
+We also want to display the score using `Dynamic`, in the same way as we are displaying `Roll` and `Result`.
+
+---task---
+Add  `Dynamic[score]` to the end of your code.
+---/task---

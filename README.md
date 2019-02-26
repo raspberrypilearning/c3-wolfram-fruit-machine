@@ -1,11 +1,11 @@
-# c3-wolfram-fruit-machine
+# blank-template
 
-![c3-wolfram-fruit-machine](banner.png)
+![blank-template](banner.png)
 
-Find the project online at [projects.raspberrypi.org/en/projects/c3-wolfram-fruit-machine](https://projects.raspberrypi.org/en/projects/c3-wolfram-fruit-machine)
+Find the project online at [projects.raspberrypi.org/en/projects/blank-template](https://projects.raspberrypi.org/en/projects/blank-template)
 
 ## Resources
-For solutions and project materials, see [en/resources](https://github.com/raspberrypilearning/c3-wolfram-fruit-machine/tree/master/en/resources)
+For solutions and project materials, see [en/resources](https://github.com/raspberrypilearning/blank-template/tree/master/en/resources)
 
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md)

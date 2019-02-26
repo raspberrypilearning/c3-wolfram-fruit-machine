@@ -4,7 +4,6 @@ This is cool, but it's not very interactive yet. We still have to evaluate two c
 
 We want a button which selects three random pieces of fruit, and runs our Which function to display a result.
 
-
 --- task ---
 
 Put your Which statement and your roll variable into a button.
@@ -22,7 +21,6 @@ We can do this using `Dynamic`. `Dynamic` displays the updated value, so each ti
 --- task ---
 Use `Dynamic` to create a button. 
 
-
 ```
 roll = RandomChoice[fruits, 3];
 result = Text["Click Roll Again to Start"];
@@ -36,5 +34,8 @@ Button["Roll Again",
 Dynamic[Grid[{roll}, Frame -> All, FrameStyle -> Thick]]
 Dynamic[result]
 ```
+--- /task ---
+
+--- task ---
 Delete your code for the non-Dynamic button you made in the previous step.
 --- /task ---

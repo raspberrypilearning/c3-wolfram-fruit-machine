@@ -1,11 +1,10 @@
 ## Finishing Touches
 
-Great! We now have two buttons. The first button rolls again, tells us if we won or lost, and updates the score. The second button starts the game again, resetting the scores back to 100.
+Great! We now have two buttons: The first button rolls again, tells us if we won or lost, and updates the score. The second button starts the game again, resetting the score back to 100.
 
-Let's design the interface so that the two buttons are next to each other.
+Let's design our interface so that the two buttons are next to each other.
 
 --- task ---
-
 Put the buttons into a list, separated by a `,`, and then put the list inside the `Row` function. `Row` takes a list, `{}`, of items, in this case buttons, and puts all of the items on one line.
 
 Put the three `Dynamic` variables: `roll`, `result` and `score`, into a list, separated by a `,`, and then put the list inside the `Column` function. `Column` takes a list, `{}`, of items, and puts all of the items in a column. This means that the results will all be in the same output cell, instead of three separate output cells.
@@ -31,3 +30,4 @@ Dynamic[score]}]
 ```
 --- /task ---
 
+Notice how the column is inside the row, so the column of three items is treated as one item to put in the row.

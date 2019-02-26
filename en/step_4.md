@@ -27,7 +27,10 @@ A `Which` statement takes an input (the list of randomly chosen fruits), and che
 ![Which Statement](images/Which.png)
 
 --- task ---
+First, clean up a little: Delete the previous code that was using `RandomChoice[fruits, 3]`.
+--- /task ---
 
+--- task ---
 Combine the random fruit picker and the game rules into a single function using a `Which` statement.
 
 ```
@@ -37,5 +40,4 @@ Which[
  Max[Counts[roll]] == 2, Print["So Close!"],
  Max[Counts[roll]] == 1, Print["Loser!"]]
 ```
-Delete any previous code featuring `RandomChoice[fruits, 3]`
 --- /task ---

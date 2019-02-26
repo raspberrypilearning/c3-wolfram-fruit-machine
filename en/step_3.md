@@ -1,6 +1,6 @@
 ## Random Choices
 
-The game requires three random fruits from the pile.
+The game requires three random fruits from the list.
 
 In order to choose fruits at random, we use the `RandomChoice` function. 
 

@@ -4,10 +4,7 @@ In this project, you are going to build an interactive Fruit Machine game. The g
 
 ### What you will make
 
-
---- print-only ---
 ![Complete project](images/complete.png)
---- /print-only ---
 
 --- collapse ---
 ---
@@ -15,12 +12,11 @@ title: What you will need
 ---
 ### Hardware
 
-+ Either a desktop computer, laptop, or a Raspberry Pi
++ A computer: desktop, laptop, or a Raspberry Pi
 
 ### Software
 
-+ Wolfram Language
-+ This project can be completed in a web browser using [wolframcloud.com](http://lab.wolframcloud.com/app/). Log in, and click Create New Notebook.
++ Wolfram Language — this is available for free on the Raspberry Pi as part of NOOBS
 
 --- /collapse ---
 

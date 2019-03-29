@@ -1,6 +1,6 @@
 ## Introduction
 
-In this project, you are going to build an interactive Fruit Machine game. The game is simple: you press a button and three fruits are randomly selected from five possible options. If you get three of the same fruit, you win the game!
+In this project, you are going to build an interactive fruit machine game. The game is simple: you press a button and three fruits are randomly selected from five possible options. If you get three of the same fruit, you win the game!
 
 ### What you will make
 

@@ -1,25 +1,25 @@
-## Making the Game Playable
+## Make your game playable
 
-This is cool, but it's not very interactive yet. We still have to evaluate two cells in order to get our result. It would be better if we had a button which prints the fruit selection and the result every time we press it.
+The game isn't very interactive yet. And you still have to run two functions in order to get the fruit and the message. It would be better if the game had a button that you can click to make the game show the fruit selection and the message.
 
-We want a button which selects three random pieces of fruit, and runs our Which function to display a result.
+So you need a button that selects three random pieces of fruit, and that runs the `Which` function to display a message.
 
 --- task ---
 
-Put your Which statement and your roll variable into a button.
+Put your `Which` statement and your `roll` variable into a `Button` function.
 
-Use a `;` to separate commands inside the button.
+Use a `;` to separate commands inside the `Button`.
 
-![Basic Roll Agian Button](images/BasicButton.png)
+![Basic Roll Again Button](images/BasicButton.png)
 
 --- /task ---
 
-You might notice that every time you press the button, the new output appears underneath the old output. It would be better to replace the old output with the new output each time you press the button.
+Notice that every time you press the button, the new output appears below the old output. It would be better to instead replace the old output with the new output.
 
-We can do this using `Dynamic`. `Dynamic` displays the updated value, so each time we reevaluate the code by pressing the button, `Dynamic` will update to the new value.
+You can do this by using `Dynamic`. `Dynamic` displays the up-to-date value of a variable. So each time you click the button to run the code, `Dynamic` updates to the new value.
 
 --- task ---
-Use `Dynamic` to create a button. 
+Use `Dynamic` to display the fruit selection and the message. 
 
 ```
 roll = RandomChoice[fruits, 3];
@@ -37,5 +37,5 @@ Dynamic[result]
 --- /task ---
 
 --- task ---
-Delete your code for the non-Dynamic button you made in the previous step.
+If you haven't done so already, remove the code for the non-`Dynamic` button.
 --- /task ---

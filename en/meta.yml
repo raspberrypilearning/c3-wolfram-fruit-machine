@@ -1,4 +1,4 @@
-title: Fruit Machine
+title: Fruit machine
 hero_image: images/banner.png
 description:
 version: 4
@@ -7,11 +7,11 @@ copyedit: false
 last_tested: "2018-12-06"
 steps:
   - title: Introduction
-  - title: Importing Images
-  - title: Random Choices
-  - title: Building a Game
-  - title: Making the Game Playable
-  - title: Keeping Score
-  - title: Finishing Touches
-  - title: "Challenge: End the Game"
+  - title: Import images
+  - title: Random choices
+  - title: Build a game
+  - title: Make the game playable
+  - title: Keep score
+  - title: Create a game interface
+  - title: "Challenge: end the game"
     challenge: true

@@ -1,33 +1,36 @@
-## Keeping Score
+## Keep score
 
-Great, now we can press a button and automatically get a new roll and the result. But what if we want to keep score? We need a variable to keep track, and we need to have each result in the `Which` statement add or subtract from the score. You can choose to have your game assign any score to each result.
+Great, now you have a button you can click to automatically get a new selection and the right message. But you probably want to keep score of how well your game is going. To keep score, you need a variable for the score. Each result in the `Which` statement should add or subtract from the score.
 
-In order to add or subtract from a number, we set the variable:
+In order to add or subtract from a number, you first set the number as a variable:
 ```
 number = 1
 ```
-And then we can add using `+=`, and take away using `-=`
+Then you can add using `+=`, and subtract using `-=`.
 
 ![Number Adding](images/NumberAdd.png)
 
 --- task ---
-Set up a score variable. Put your `score` variable underneath your variables for `roll` and `result`.
+Create a `score` variable. Put `score` below your `roll` and `result` variables.
 
 ```
 score = 100;
 ``` 
 --- /task ---
 
-Within the `Which` function, we can make multiple actions happen if our question is true by using a `;`. This is called a Compound Expression. So for each possibility, we can add to, or subtract from, the score.
+Within the `Which` function, you can use `;` to make multiple things happen if a condition is true. This is called a **Compound Expression**. So for each condition, you can change the score.
 
-  + Winning (when the `Max` is 3), should increase the score by 10.
-  + Losing (when the `Max` is 1) should decrease the score by 10.
-  + Getting close (when the `Max` is 2), should make no difference to the score.
+  + Winning (when the `Max` is 3) should increase the score by 10 points.
+  + Losing (when the `Max` is 1) should decrease the score by 10 points.
+  + Getting close (when the `Max` is 2) should make no difference to the score.
 
-Start off by creating a score variable, and decide how many points each action (winning, getting 2, and losing) will gain/lose.
+These are just suggestions. If you like, you can make your game assign other numbers of points for the results.
 
 --- task ---
-Add the score changes to your Which statement using a `;`.
+
+Decide how many points you gain or lose for each result (winning, getting close, or losing).
+
+Add the score changes to your `Which` statement using a `;`.
 
 ```
 result =
@@ -36,36 +39,37 @@ result =
    Max[Counts[roll]] == 2, Text["So Close!"],
    Max[Counts[roll]] == 1, score -= 10; Text["Loser!"]]
 ```
-Replace your previous code for `result` with your new `Which` statement.
+Replace the code you already have for `result` with your new `Which` statement.
 
 --- /task ---
 
-We will also need a way to reset the score.
+You also need a way to reset the score at the beginning of each game.
 
 --- task ---
-Create another button which sets the score back to 100.
+Create another button that sets the score to 100.
+
+Put the new button on a new line after the `"Roll Again"` button.
+
 
 ```
 Button["Start Again", score = 100]
 ```
-Put your new button on a new line after the `"Roll Again"` button.
 
  --- /task ---
-
-We also want to display the score using `Dynamic`, in the same way as we are displaying `roll` and `result`.
+Of course, you also want to display your score. This is easy, because you can use `Dynamic` again, as you do for `roll` and `result`.
 
 ---task---
 Make the score display dynamically at the end of your output.
 
 --- hints ---
 --- hint ---
-`Dynamic` needs to be given a variable as an argument.
+`Dynamic` needs a variable as an argument.
 --- /hint ---
 --- hint ---
-Look at the code you have for `roll` and `result` to see how they're dispayed dynamically.
+Look at the code you have for `roll` and `result` to see how they're displayed dynamically.
 --- /hint ---
 --- hint ---
-The code you need to put on a new line at the end of your program is:
+Put this code on a new line at the end of your program:
 
 ```
 Dynamic[score]

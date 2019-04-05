@@ -1,37 +1,32 @@
-## Building a Game
+## Build a game
 
-There are three possible outcomes for the game:
-+ 3 fruit the same: the player wins
-+ 2 fruit the same: the player is close
-+ All fruits different: the player loses
+There are three possible outcomes in a fruit machine game:
++ Three fruit of the same kind, which is a win
++ Two fruit of the same kind, which is close but not quite a win
++ All fruits are different, which is a loss
 
-We can find out how many of the randomly selected fruits are the same by finding the `Count` of each fruit. We can then use `Max` to find out the largest number of duplicates.
+Each time the game runs, you need to find out how many of the randomly selected fruits are the same. You can do this by first using `Count` to find the number of each possible fruit. Then you can use `Max` to find out the largest number.
 
 ![Max Counts 2](images/MaxCounts2.png)
 
-So now we have a set of rules.
+This gives you a set of rules to build your game:
 
-+ If `Max` is 3, then we win
-+ If `Max` is 2, then nothing happens
-+ If `Max` is 1, then we lose.
++ If `Max` is 3, the game is won and should print the message 'Winner!'
++ If `Max` is 2, then the game should print the message 'So Close!'
++ If `Max` is 1, the game is lost and should print the message 'Loser!'
 
-We can use these `Max` counts to build a game.
-+ If all three are the same, print 'Winner!'
-+ If two are the same, print 'So Close!'
-+ If all three are different, print 'Loser!'
+The best tool to use here is a `Which` statement. `Which` checks multiple conditions for whether they are `True`, and returns a specific output depending on which is the `True` condition. If the first condition is `True`, `Which` returns the output for that condition. If the second conditionis `True`, `Which` returns the output for that condition, and so on, until `Which` has checked all conditions.
 
-The best way to check if one of multiple conditions is true, and return a specific output if the condition is true, is a `Which` statement.
-
-A `Which` statement takes an input (the list of randomly chosen fruits), and checks each condition in order. If the first answer is `True`, it returns the output for that rule. If the second one is `True`, it returns the output for that condition, and so on, until there are no more conditions to check.
+In your game, `Which` can take the list of randomly chosen fruits as input and use the three rules as conditions.
 
 ![Which Statement](images/Which.png)
 
 --- task ---
-First, clean up a little: Delete the previous code that was using `RandomChoice[fruits, 3]`.
+First, tidy up your program: delete the code that includes `RandomChoice[fruits, 3]`.
 --- /task ---
 
 --- task ---
-Combine the random fruit picker and the game rules into a single function using a `Which` statement.
+Create a `Which` statement that combines the random fruit picker and the game rules.
 
 ```
 roll = RandomChoice[fruits, 3]
